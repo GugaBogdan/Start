@@ -1,0 +1,22 @@
+#https://dmoj.ca/problem/coci18c3p1
+
+word = input("Enter word: ").upper
+
+letter_h = 0
+letter_o = 0
+letter_n = 0
+letter_i = 0
+
+for i in word():
+    if i == "H":
+        letter_h += 1
+    elif i == "O":
+        letter_o += 1
+    elif i == "N":
+        letter_n += 1
+    elif i == "I":
+        letter_i += 1
+
+honi_blocks = min(letter_h, letter_o, letter_n, letter_i)
+
+print(honi_blocks)
