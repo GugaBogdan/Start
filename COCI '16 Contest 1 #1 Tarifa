@@ -1,0 +1,13 @@
+#https://dmoj.ca/problem/coci16c1p1
+
+megabytes_month = int(input("Megabytes a month: "))
+
+used_month = int(input("How many months used: "))
+
+usage = 0
+
+for i in range(used_month):
+    used = int(input("How many megabytes used: "))
+    usage = usage + megabytes_month - used
+
+print(usage + megabytes_month)
