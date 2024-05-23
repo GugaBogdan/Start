@@ -1,0 +1,14 @@
+#https://dmoj.ca/problem/ccc11s2
+
+questions = int(input("How many questions: "))
+
+correct_answer = 0
+
+students = input("Students' response: ")
+correct = input("Correct answers: ")
+
+for i in range(questions):
+    if students[i] == correct[i]:
+        correct_answer += 1
+
+print(correct_answer)
