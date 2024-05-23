@@ -1,0 +1,22 @@
+#https://dmoj.ca/problem/ccc11s1
+
+line = input("How many lines: ")
+
+t = 0
+s = 0
+
+text = input("Enter text: ").lower
+
+for i in text():
+    if i == "s":
+        s += 1
+    elif i == "t":
+        t += 1
+
+if t > s:
+    print("\nEnglish")
+elif t < s:
+    print("\nFrench")
+elif t == s:
+    print("\nFrench")
+
